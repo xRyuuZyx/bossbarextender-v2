@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "bossbar_extender",
+  "version": "${version}",
+  "name": "BossBar Extender",
+  "description": "Extends the vanilla BossBar render area and sends scaled screen dimensions to UIStudio while preserving resource-pack rendering.",
+  "authors": ["OpenAI"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "id.roleplay.bossbarextender.BossBarExtenderClient"
+    ]
+  },
+  "mixins": [
+    "bossbar_extender.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": ">=1.21.1 <=1.21.11",
+    "java": ">=21",
+    "fabric-api": ">=0.110.0"
+  }
+}
